@@ -1,9 +1,19 @@
-﻿namespace _657_Project3_Decorator
-{
-    abstract class TV
-    {
-        public abstract void Features();
+﻿using System;
 
-        public abstract void Cost();
+namespace _657_Project3_Decorator
+{
+    class TV
+    {
+        public string featureList = "TV Features:";
+        public int cost = 500;
+        public virtual string Features() {
+            return featureList;
+        }
+
+        public virtual int Cost()
+        {
+            return cost;
+        }
+            
     }
 }

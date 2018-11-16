@@ -22,8 +22,9 @@ namespace _657_Project3_Decorator
             // Pick object
             TV consumerChoice = orderCustomTV(type, resolution, smart);
 
-            consumerChoice.Cost();
-            consumerChoice.Features();
+            // Print Results
+            Console.WriteLine("Cost:\n" + "$" + consumerChoice.Cost());
+            Console.WriteLine(consumerChoice.Features());
 
             Console.Read();
         }
@@ -112,91 +113,44 @@ namespace _657_Project3_Decorator
 
         private static TV orderCustomTV(int type, int resolution, int smart)
         {
-            TV CustomTV;
+            TV customTV = new TV();
+            
+            // Set Type
             if(type == 1)
             {
-                if(resolution == 1)
-                {
-                    if(smart == 1)
-                    {
-                        CustomTV = new MonitorOLEDSmart();
-                    }
-                    else
-                    {
-                        CustomTV = new MonitorOLEDDumb();
-                    }
-                }
-                else if (resolution == 2){
-                    if (smart == 1)
-                    {
-                        CustomTV = new MonitorPlasmaSmart();
-                    }
-                    else
-                    {
-                        CustomTV = new MonitorPlasmaDumb();
-                    }
-                }
-                else
-                {
-                    if (smart == 1)
-                    {
-                        CustomTV = new MonitorLCDSmart();
-                    }
-                    else
-                    {
-                        CustomTV = new MonitorLCDDumb();
-                    }
-                }
+                customTV = new Monitor(customTV);
             }
             else if(type == 2)
             {
-                if(smart == 1)
-                {
-                    CustomTV = new ProjectorSmart();
-                }
-                else
-                {
-                    CustomTV = new ProjectorDumb();
-                }
+                customTV = new Projector(customTV);
             }
-            else
+            else if (type == 3)
             {
-                if (resolution == 1)
-                {
-                    if (smart == 1)
-                    {
-                        CustomTV = new FlatScreenOLEDSmart();
-                    }
-                    else
-                    {
-                        CustomTV = new FlatScreenOLEDDumb();
-                    }
-                }
-                else if (resolution == 2)
-                {
-                    if (smart == 1)
-                    {
-                        CustomTV = new FlatScreenPlasmaSmart();
-                    }
-                    else
-                    {
-                        CustomTV = new FlatScreenPlasmaDumb();
-                    }
-                }
-                else
-                {
-                    if (smart == 1)
-                    {
-                        CustomTV = new FlatScreenLCDSmart();
-                    }
-                    else
-                    {
-                        CustomTV = new FlatScreenLCDDumb();
-                    }
-                }
+                customTV = new Flatscreen(customTV);
             }
+
+            // Set Resolution
+            if(resolution == 1)
+            {
+                customTV = new OLED(customTV);
+            }
+            else if(resolution == 2)
+            {
+                customTV = new Plasma(customTV);
+            }
+            else if(resolution == 3)
+            {
+                customTV = new LCD(customTV);
+            }
+
+            // Set Smart
+            if(smart == 1)
+            {
+                customTV = new SmartEnabled(customTV);
+            }
+
             
-            return CustomTV;
+            return customTV;
         }
     }
 }
