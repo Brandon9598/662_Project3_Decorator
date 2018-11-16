@@ -1,0 +1,11 @@
+C:\Users\Brand\source\repos\657_Project3_Decorator\657_Project3_Decorator\bin\Debug\netcoreapp2.0\657_Project3_Decorator.deps.json
+C:\Users\Brand\source\repos\657_Project3_Decorator\657_Project3_Decorator\bin\Debug\netcoreapp2.0\657_Project3_Decorator.runtimeconfig.json
+C:\Users\Brand\source\repos\657_Project3_Decorator\657_Project3_Decorator\bin\Debug\netcoreapp2.0\657_Project3_Decorator.runtimeconfig.dev.json
+C:\Users\Brand\source\repos\657_Project3_Decorator\657_Project3_Decorator\bin\Debug\netcoreapp2.0\657_Project3_Decorator.dll
+C:\Users\Brand\source\repos\657_Project3_Decorator\657_Project3_Decorator\bin\Debug\netcoreapp2.0\657_Project3_Decorator.pdb
+C:\Users\Brand\source\repos\657_Project3_Decorator\657_Project3_Decorator\obj\Debug\netcoreapp2.0\657_Project3_Decorator.csprojResolveAssemblyReference.cache
+C:\Users\Brand\source\repos\657_Project3_Decorator\657_Project3_Decorator\obj\Debug\netcoreapp2.0\657_Project3_Decorator.csproj.CoreCompileInputs.cache
+C:\Users\Brand\source\repos\657_Project3_Decorator\657_Project3_Decorator\obj\Debug\netcoreapp2.0\657_Project3_Decorator.AssemblyInfoInputs.cache
+C:\Users\Brand\source\repos\657_Project3_Decorator\657_Project3_Decorator\obj\Debug\netcoreapp2.0\657_Project3_Decorator.AssemblyInfo.cs
+C:\Users\Brand\source\repos\657_Project3_Decorator\657_Project3_Decorator\obj\Debug\netcoreapp2.0\657_Project3_Decorator.dll
+C:\Users\Brand\source\repos\657_Project3_Decorator\657_Project3_Decorator\obj\Debug\netcoreapp2.0\657_Project3_Decorator.pdb
